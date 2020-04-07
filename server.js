@@ -15,7 +15,7 @@ app.get('/', (req, res) => res.send('API Running'));
 app.use('/api/users', require('./routes/api/users'));
 app.use('/api/auth', require('./routes/api/auth'));
 app.use('/api/profile', require('./routes/api/profile'));
-app.use('/api/posts', require('./routes/api/users'));
+app.use('/api/posts', require('./routes/api/posts'));
 
 // listen to environment variable called port, default 5000
 const PORT = process.env.PORT || 5000;
