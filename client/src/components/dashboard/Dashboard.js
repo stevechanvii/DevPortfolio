@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Spinner from '../layout/spinner/spinner';
 import { getCurrentProfile } from '../../actions/profile';
+import { DashboardActions } from './DashboardActions';
 
 //racfp
 const Dashboard = ({ getCurrentProfile, auth: { user }, profile: { profile, loading } }) => {
@@ -20,7 +21,9 @@ const Dashboard = ({ getCurrentProfile, auth: { user }, profile: { profile, load
                 <i className='fas fa-user'></i> Welbome {user && user.name}
             </p>
             {profile !== null ? (
-                <Fragment>has</Fragment>
+                <Fragment>
+                    <DashboardActions />
+                </Fragment>
             ) : (
                 <Fragment>
                     <p>You have not yet setup a profile, plseae add some info</p>
