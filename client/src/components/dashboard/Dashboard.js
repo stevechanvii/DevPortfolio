@@ -2,7 +2,7 @@ import React, { useEffect, Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import Spinner from '../layout/spinner/spinner';
+import Spinner from '../layout/spinner/Spinner';
 import { getCurrentProfile, deleteAccount } from '../../actions/profile';
 import { DashboardActions } from './DashboardActions';
 import Experience from './Experience';
@@ -56,7 +56,7 @@ Dashboard.propTypes = {
     getCurrentProfile: PropTypes.func.isRequired,
     auth: PropTypes.object.isRequired,
     profile: PropTypes.object.isRequired,
-    deleteAccount: profile_url,
+    deleteAccount: PropTypes.func.isRequired,
 };
 
 const mapStateToProps = (state) => ({
