@@ -6,7 +6,7 @@ import Spinner from '../layout/spinner/Spinner';
 import PostItem from '../posts/PostItem';
 import CommentForm from './CommentForm';
 import CommentItem from './CommentItem';
-import { getPost, getPosts } from '../../actions/post';
+import { getPost } from '../../actions/post';
 
 const Post = ({ getPost, post: { post, loading }, match }) => {
     useEffect(() => {

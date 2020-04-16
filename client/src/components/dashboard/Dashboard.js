@@ -7,7 +7,6 @@ import { getCurrentProfile, deleteAccount } from '../../actions/profile';
 import { DashboardActions } from './DashboardActions';
 import Experience from './Experience';
 import Education from './Education';
-import { profile_url } from 'gravatar';
 
 //racfp
 const Dashboard = ({
